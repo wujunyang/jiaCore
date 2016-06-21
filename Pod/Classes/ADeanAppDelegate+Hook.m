@@ -22,10 +22,10 @@
 
 + (void)adean_AppDelegateHook
 {
-    SwizzlingMethod([AppDelegate class], @selector(application:didFinishLaunchingWithOptions:), @selector(adean_application:didFinishLaunchingWithOptions:));
-    SwizzlingMethod([AppDelegate class], @selector(application:handleOpenURL:), @selector(adean_application:handleOpenURL:));
-    SwizzlingMethod([AppDelegate class], @selector(application:openURL:sourceApplication:annotation:), @selector(adean_application:openURL:sourceApplication:annotation:));
-    SwizzlingMethod([AppDelegate class], @selector(applicationDidReceiveMemoryWarning:), @selector(adean_applicationDidReceiveMemoryWarning:));
+    SwizzlingMethod([jiaAppDelegate class], @selector(application:didFinishLaunchingWithOptions:), @selector(adean_application:didFinishLaunchingWithOptions:));
+    SwizzlingMethod([jiaAppDelegate class], @selector(application:handleOpenURL:), @selector(adean_application:handleOpenURL:));
+    SwizzlingMethod([jiaAppDelegate class], @selector(application:openURL:sourceApplication:annotation:), @selector(adean_application:openURL:sourceApplication:annotation:));
+    SwizzlingMethod([jiaAppDelegate class], @selector(applicationDidReceiveMemoryWarning:), @selector(adean_applicationDidReceiveMemoryWarning:));
     
 }
 
