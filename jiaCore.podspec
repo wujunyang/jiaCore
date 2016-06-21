@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "jiaCore"
-s.version      = "0.0.3"
+s.version      = "0.0.4"
 s.summary      = "这是一个简单SDFSDFSDF的测试运JIA用类"
 
 s.homepage     = "https://github.com/wujunyang/jiaCore"
@@ -18,11 +18,24 @@ s.author             = { "wujunyang" => "wujunyang@126.com" }
 
 s.platform     = :ios, "7.0"
 
-s.source       = { :git => "https://github.com/wujunyang/jiaCore.git", :tag => "0.0.3" }
+s.source       = { :git => "https://github.com/wujunyang/jiaCore.git", :tag => "0.0.4" }
 
 s.source_files  = "Pod/Classes/**/*.{h,m}"
 
 s.requires_arc = true
+
+s.subspec 'JIQNetwork' do |networkEngine|
+networkEngine.source_files = 'Pod/YTKNetwork/**/*'
+networkEngine.dependency 'AFNetworking', '~> 2.5.4'
+networkEngine.dependency 'AFDownloadRequestOperation'
+end
+
+s.subspec 'JIQJCAlertView' do |jiqAlertView|
+jiqAlertView.source_files = 'Pod/JCAlertView/**/*'
+jiqAlertView.resource ='Pod/JCAlertView/JCAlertView.bundle'
+end
+
+s.frameworks = 'UIKit'
 
 # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 # s.dependency "JSONKit", "~> 1.4"
