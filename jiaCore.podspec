@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "jiaCore"
-s.version      = "0.0.15"
+s.version      = "0.0.16"
 s.summary      = "这是一个简单SDFSDFSDF的测试运JIA用类"
 
 s.homepage     = "https://github.com/wujunyang/jiaCore"
@@ -18,20 +18,20 @@ s.author             = { "wujunyang" => "wujunyang@126.com" }
 
 s.platform     = :ios, "7.0"
 
-s.source       = { :git => "https://github.com/wujunyang/jiaCore.git", :tag => "0.0.15" }
+s.source       = { :git => "https://github.com/wujunyang/jiaCore.git", :tag => "0.0.16" }
 
 s.requires_arc = true
 
-s.subspec 'JiaCore' do |jiaCore|
-jiaCore.source_files = 'Pod/JiaCore/**/*.{h,m}'
-jiaCore.dependency 'XAspect'
+s.subspec 'JiaCores' do |myjiaCore|
+myjiaCore.source_files = 'Pod/JiaCore/**/*.{h,m}'
+myjiaCore.dependency 'XAspect'
 end
 
 
-s.subspec 'JiaGTCore' do |jiagtCore|
-jiagtCore.source_files = 'Pod/GTCore/**/*'
-jiagtCore.dependency 'jiaCore/JiaCore'
-jiagtCore.dependency 'GTSDK'
+s.subspec 'JiaGTCore' do |ctcore|
+ctcore.source_files = 'Pod/GTCore/**/*.{h,m}'
+ctcore.dependency 'GTSDK'
+ctcore.dependency 'jiaCore/JiaCores'
 end
 
 
