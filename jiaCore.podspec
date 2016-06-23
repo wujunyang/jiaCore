@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "jiaCore"
-s.version      = "0.0.17"
+s.version      = "0.0.18"
 s.summary      = "这是一个简单SDFSDFSDF的测试运JIA用类"
 
 s.homepage     = "https://github.com/wujunyang/jiaCore"
@@ -18,7 +18,7 @@ s.author             = { "wujunyang" => "wujunyang@126.com" }
 
 s.platform     = :ios, "7.0"
 
-s.source       = { :git => "https://github.com/wujunyang/jiaCore.git", :tag => "0.0.17" }
+s.source       = { :git => "https://github.com/wujunyang/jiaCore.git", :tag => "0.0.18" }
 
 s.requires_arc = true
 
