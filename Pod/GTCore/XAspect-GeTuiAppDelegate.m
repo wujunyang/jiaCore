@@ -73,7 +73,7 @@ AspectPatch(-, void, application:(UIApplication *)application didRegisterUserNot
 -(void)initLoadGeTui:(NSDictionary *)launchOptions
 {
     // 通过 appId、 appKey 、appSecret 启动SDK，注：该方法需要在主线程中调用
-    [GeTuiSdk startSdkWithAppId:JiaKGtAppId appKey:JiaKGtAppKey appSecret:JiaKGtAppSecret delegate:self];
+    //[GeTuiSdk startSdkWithAppId:JiaKGtAppId appKey:JiaKGtAppKey appSecret:JiaKGtAppSecret delegate:self];
     
     // 注册APNS
     [self registerUserNotification];

@@ -12,9 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-//个推配置
-@property(nonatomic,copy)NSString *JiaKGtAppId;
-@property(nonatomic,copy)NSString *JiaKGtAppKey;
-@property(nonatomic,copy)NSString *JiaKGtAppSecret;
+////个推配置
+//@property(nonatomic,strong)NSString *JiaKGtAppId;
+//@property(nonatomic,strong)NSString *JiaKGtAppKey;
+//@property(nonatomic,strong)NSString *JiaKGtAppSecret;
 
 @end
