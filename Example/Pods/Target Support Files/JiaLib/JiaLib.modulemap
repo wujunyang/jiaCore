@@ -1,0 +1,6 @@
+framework module JiaLib {
+  umbrella header "JiaLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

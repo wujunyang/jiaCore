@@ -1,0 +1,6 @@
+framework module Pods_JiaLib_Example {
+  umbrella header "Pods-JiaLib_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

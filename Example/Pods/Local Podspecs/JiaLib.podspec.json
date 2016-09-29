@@ -1,0 +1,32 @@
+{
+  "name": "JiaLib",
+  "version": "0.1.0",
+  "summary": "A short description of JiaLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wujunyang/jiaCore",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wujunyang": "wujunyang@126.com"
+  },
+  "source": {
+    "git": "https://github.com/wujunyang/jiaCore.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JiaLib/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "dependencies": {
+    "Masonry": [
+      "~>0.6.1"
+    ]
+  }
+}

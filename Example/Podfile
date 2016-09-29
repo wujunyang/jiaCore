@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'JiaLib_Example' do
+  pod 'JiaLib', :path => '../'
+  pod 'Masonry','~>0.6.1'
+end

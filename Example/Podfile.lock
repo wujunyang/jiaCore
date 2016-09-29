@@ -1,0 +1,18 @@
+PODS:
+  - JiaLib (0.1.0):
+    - Masonry (~> 0.6.1)
+  - Masonry (0.6.4)
+
+DEPENDENCIES:
+  - JiaLib (from `../`)
+  - Masonry (~> 0.6.1)
+
+EXTERNAL SOURCES:
+  JiaLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JiaLib: 9a0a52f5936232ec8cd5c50c7b7059ab943c4885
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+
+COCOAPODS: 0.39.0
